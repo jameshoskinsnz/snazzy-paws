@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="css/snazzy.css">
+    
+    <title>Snazzy Paws Booking</title>
+</head>
+<body>
+    <nav class="nav-tab">
+        <div class="brand-container">
+            <div class="logo-container">
+            <img src="Public/images/snazzy-logo.png" alt="snazzy paws logo">
+            </div>
+            <span class="brand-name">Snazzy Paws Grooming</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html" aria-current="page">Booking</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <section class="booking-section page-wrapper" style="margin-top: 20px;">
+            <h1>Book a Session</h1>
+
+            <div class="booking-dashboard">
+                <div class="calendar-column">
+                    <div class="form-group"style="margin-top :10px; margin-bottom: 10px;">
+                        <label for="service-select">Select Service</label>
+                        <select id="service-select">
+                            <option>Bath & Brush</option>        
+                            <option>Haircut</option>
+                            <option>Nail trim</option>
+                            <option>Ear cleaning</option>
+                            <option>Teeth brushing</option>
+                            <option>De-shedding treatment</option>
+                            <option>Flea and tick treatment</option>
+                            <option>Spa package</option>
+                            <option>Express service</option>
+                            <option>Medicated bath</option>
+                            <option>Special Breed Cuts</option>
+                            <option>Puppy package</option>
+                            <option>Senior dog</option>
+                            <option>Full grooming package</option>
+                        </select>
+                    </div>
+
+                    <div class="calendar-wrapper">
+                        <h3>Select a Date</h3>
+                        <div class="calendar-grid">
+                            <div class="day-head">Mon</div><div class="day-head">Tue</div>
+                            <div class="day-head">Wed</div><div class="day-head">Thu</div>
+                            <div class="day-head">Fri</div><div class="day-head">Sat</div>
+                            <div class="day-head">Sun</div>
+
+                            <button class="calendar-day day-booked">1</button>
+                            <button class="calendar-day day-booked">2</button>
+                            <button class="calendar-day day-booked">3</button>
+                            <button class="calendar-day day-booked">4</button>
+                            <button class="calendar-day day-booked">5</button>
+                            <button class="calendar-day day-booked">6</button>
+                            <button class="calendar-day day-booked">7</button>
+                            <button class="calendar-day day-booked">8</button>
+                            <button class="calendar-day day-booked">9</button>
+                            <button class="calendar-day day-booked">10</button>
+                            <button class="calendar-day day-booked">11</button>
+                            <button class="calendar-day current-selection">12</button>
+                            <button class="calendar-day">13</button>
+                            <button class="calendar-day">14</button>
+                            <button class="calendar-day">15</button>
+                            <button class="calendar-day">16</button>
+                            <button class="calendar-day">17</button>
+                            <button class="calendar-day">18</button>
+                            <button class="calendar-day">19</button>
+                            <button class="calendar-day">20</button>
+                            <button class="calendar-day">21</button>
+                            <button class="calendar-day">22</button>
+                            <button class="calendar-day">23</button>
+                            <button class="calendar-day">24</button>
+                            <button class="calendar-day">25</button>
+                            <button class="calendar-day">26</button>
+                            <button class="calendar-day">27</button>
+                            <button class="calendar-day">28</button>
+                            <button class="calendar-day">29</button>
+                            <button class="calendar-day">30</button>
+                            <button class="calendar-day">31</button>
+
+                        </div>
+                    </div>
+
+                    <div class="times-table">
+                        <h3>Available Times</h3>
+                        <div class="time-slots">
+                            <button class="time-btn">09:00</button>
+                            <button class="time-btn">10:30</button>
+                            <button class="time-btn">13:00</button>
+                            <button class="time-btn" disabled>15:00 (Full)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-column">
+                    <div class="booking-form-box">
+                        <div class="form-group">
+                            <label for="time-slot">Selected Time</label>
+                            <select id="time-slot">
+                                <option>09:00 AM</option>
+                                <option>10:30 AM</option>
+                                <option>01:00 PM</option>
+                                <option>03:00 PM</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="user-name">Name</label>
+                            <input type="text" id="user-name" placeholder="Full Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-email">Email</label>
+                            <input type="email" id="user-email" placeholder="Email Address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-phone">Phone</label>
+                            <input type="tel" id="user-phone" placeholder="Phone Number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dog-name">Dog's Name</label>
+                            <input type="text" id="dog-name" placeholder="Dog's Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="dog-breed">Dog's Breed</label>
+                            <input type="text" id="dog-breed" placeholder="Dog's Breed">
+                        </div>
+                        <div class="form-group">
+                            <label for="dog-age">Dog's Age</label>
+                            <input type="number" id="dog-age" placeholder="Dog's Age">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requests">Special Requests</label>
+                            <textarea id="requests" rows="6"></textarea>
+                        </div>
+
+                        <button class="book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+<footer class="footer">
+    <div class="opening-hours">
+        <p><strong>Hours:</strong> Mon-Sat 9am-5pm <br> Sun Closed</p>
+    </div>
+    
+    <div class="copy-text">
+        <p>&copy; 2026 Snazzy Paws Grooming</p>
+    </div>
+</footer>
+
+
+</html>
+
