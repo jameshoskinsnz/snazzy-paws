@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <!-- Required Task 1a Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Snazzy Paws Grooming's full range of services in Hamilton. From basic bath & brush packages to specialized breed cuts, spa treatments, and puppy packages.">
+    
+    <!-- Bootstrap CSS Framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Style Overrides -->
+    <link rel="stylesheet" href="css/snazzy.css">
+    
+    <title>Snazzy Paws Services</title>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light text-dark">
+
+    <!-- START: NAVIGATION COMPONENT -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm py-3">
+        <div class="container-fluid px-md-5">
+            <!-- Brand & Logo Identity -->
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <div class="logo-container rounded-circle bg-white overflow-hidden" style="width: 60px; height: 60px;">
+                    <img src="Public/images/snazzy-logo.png" alt="snazzy paws logo" class="w-100 h-100 object-fit-cover">
+                </div>
+                <span class="fw-bold tracking-wide">Snazzy Paws Grooming</span>
+            </a>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#snazzyNav" aria-controls="snazzyNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Menu Items -->
+            <div class="collapse navbar-collapse" id="snazzyNav">
+                <div class="navbar-nav ms-auto gap-lg-3 mt-3 mt-lg-0 fw-medium">
+                    <a class="nav-link text-white-50" href="index.html">Home</a>
+                    <a class="nav-link active" href="services.html" aria-current="page">Services</a>
+                    <a class="nav-link text-white-50" href="gallery.html">Gallery</a>
+                    <a class="nav-link text-white-50" href="booking.html">Booking</a>
+                    <a class="nav-link text-white-50" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: NAVIGATION COMPONENT -->
+
+    <!-- START: MAIN CONTENT CONTAINER -->
+    <main class="flex-grow-1 container-fluid px-4 px-md-5 my-5">
+        
+        <!-- Header Banner Section -->
+        <section class="overview text-center mb-5 mx-auto" style="max-width: 800px;">
+            <h1 class="display-4 fw-bold text-primary mb-2">Our Grooming Services</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">Professional care for your furry best friends, from energetic puppies to beloved seniors.</p>
+        </section>
+
+        <!-- START: SERVICES GRID SECTION (Fully responsive flex-row scaling) -->
+        <section class="w-100 mb-5">
+            <!-- 1 col on mobile, 2 cols on tablets, 3 cols on laptops, 4 cols on big desktop screens -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 w-100 mx-auto">
+                
+                <!-- Card 1: Bath & Brush -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/bath.jpg" class="card-img-top object-fit-cover" style="height: 200px; object-position: center top;" alt="Dog being bathed" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Bath & Brush</h3>
+                            <p class="card-text text-muted small flex-grow-1">Shampoo, blow-dry, brush-out and nail trim.</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$25 - $50</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Haircut -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/haircut.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="Dog getting a haircut" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Haircut</h3>
+                            <p class="card-text text-muted small flex-grow-1">Full bath, blow-dry, breed standard or custom cut, and nail trim.</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$45 - $85</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Nail Trim -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/nailtrim.jpg" class="card-img-top object-fit-cover" style="height: 200px; object-position: center bottom;" alt="Dog nails after trimmed" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Nail Trim</h3>
+                            <p class="card-text text-muted small flex-grow-1">Trim nails and, in some cases, filing</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$10 - $20</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Ear Cleaning -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/earclean.jpg" class="card-img-top object-fit-cover" style="height: 200px; object-position: center top;" alt="Dog getting an ear inspected for cleaning" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Ear Cleaning</h3>
+                            <p class="card-text text-muted small flex-grow-1">Gentle cleaning of ears to remove wax and debris</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$10 - $15</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Teeth Brushing -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/teethbrush.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="Dog getting their teeth brushed" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Teeth Brushing</h3>
+                            <p class="card-text text-muted small flex-grow-1">Brushing with pet-safe toothpaste</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$10 - $15</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: De-shedding Treatment -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/deshedding.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="Dog getting De-shedding Treatment" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">De-shedding Treatment</h3>
+                            <p class="card-text text-muted small flex-grow-1">Special shampoo and undercoat removal. Price in addition to bath or haircut.</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$20 - $40</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7: Flea and Tick Treatment -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/fleaticktreatment.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="Vets giving a dog flea and tick treatment" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Flea & Tick Treatment</h3>
+                            <p class="card-text text-muted small flex-grow-1">Shampoo and preventative treatment.</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$15 - $30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8: Spa Package -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/spa.png" class="card-img-top object-fit-cover" style="height: 200px; object-position: center top;" alt="Dog relaxing" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Spa Package</h3>
+                            <p class="card-text text-muted small flex-grow-1">Bath, haircut, teeth brushing, nail trim, and special conditioners.</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$75 - $150</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9: Express Service -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/express.jpg" class="card-img-top object-fit-cover" style="height: 200px; object-position: center top;" alt="Dog getting Flea and tick treatment" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Express Service</h3>
+                            <p class="card-text text-muted small flex-grow-1">For dogs that need minimal grooming or a quick touch-up.</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$15 - $25</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10: Medicated Bath -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/medbath.png" class="card-img-top object-fit-cover" style="height: 200px;" alt="Dog being sponge bathed in a medicinal bath" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Medicated Bath</h3>
+                            <p class="card-text text-muted small flex-grow-1">For pets with skin conditions requiring special shampoo.</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$20 - $40</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11: Special-Breed Cuts -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/specialbreed.jpg" class="card-img-top object-fit-cover" style="height: 200px; object-position: center top;" alt="Woman sitting with various dog breeds" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Special-Breed Cuts</h3>
+                            <p class="card-text text-muted small flex-grow-1">Breed-specific cuts or styling based on customer preference. Price varies upon consultation.</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">Quoted</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12: Puppy Package -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/puppy.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="Small puppy" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Puppy Package</h3>
+                            <p class="card-text text-muted small flex-grow-1">Gentle introductory grooming tailored for young puppies.</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$30 - $60</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 13: Senior Dog Package -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/senior.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="Older dog" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Senior Dog Package</h3>
+                            <p class="card-text text-muted small flex-grow-1">Special handling and care tailored for older dogs.</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$40 - $80</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 14: Full Grooming Package -->
+                <div class="col d-flex">
+                    <div class="card w-100 border-0 shadow-sm rounded-4 overflow-hidden transition-hover">
+                        <img src="Public/images/full-groom.jpg" class="card-img-top object-fit-cover" style="height: 200px;" alt="Fully groomed dog" loading="lazy">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold text-dark mb-2">Full Grooming Package</h3>
+                            <p class="card-text text-muted small flex-grow-1">Comprehensive bath, haircut, teeth, nails, and ear cleaning.</p>
+                            <p class="card-text fw-bold text-primary fs-5 mt-3 mb-0">$60 - $120</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- END: SERVICES GRID SECTION -->
+
+        <!-- START: PRICING TABLE SECTION -->
+        <section class="pricing-table mt-5 pt-4 text-center mx-auto" style="max-width: 900px;">
+            <h2 class="h3 fw-bold text-primary mb-4">Detailed Pricing & Add-ons</h2>
+            
+            <!-- Native Bootstrap responsive wrapper handling tiny phone layouts perfectly -->
+            <div class="table-responsive shadow-sm rounded-4 border">
+                <table class="table table-striped table-hover align-middle mb-0 text-start">
+                    <thead class="table-primary text-uppercase fs-7 tracking-wider">
+                        <tr>
+                            <th scope="col" class="py-3 ps-4 text-white">Service</th>
+                            <th scope="col" class="py-3 text-white">Small Dog / Min</th>
+                            <th scope="col" class="py-3 pe-4 text-white">Large Dog / Max</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-secondary">
+                        <tr><td class="ps-4 fw-medium text-dark">Bath and brush</td><td>$25</td><td class="pe-4">$50</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Haircut</td><td>$45</td><td class="pe-4">$85</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Nail trim</td><td>$10</td><td class="pe-4">$20</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Ear cleaning</td><td>$10</td><td class="pe-4">$15</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Teeth brushing</td><td>$10</td><td class="pe-4">$15</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">De-shedding treatment</td><td>+$20</td><td class="pe-4">+$40</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Flea and tick treatment</td><td>$15</td><td class="pe-4">$30</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Spa package</td><td>$75</td><td class="pe-4">$150</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Express service</td><td>$15</td><td class="pe-4">$25</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Medicated bath</td><td>+$20</td><td class="pe-4">+$40</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Special Breed Cuts</td><td colspan="2" class="text-muted italic pe-4">Quoted after consultation</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Puppy package</td><td>$30</td><td class="pe-4">$60</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Senior dog</td><td>$40</td><td class="pe-4">$80</td></tr>
+                        <tr><td class="ps-4 fw-medium text-dark">Full grooming package</td><td>$60</td><td class="pe-4">$120</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- END: PRICING TABLE SECTION -->
+
+    </main>
+    <!-- END: MAIN CONTENT CONTAINER -->
+
+    <!-- START: FOOTER COMPONENT -->
+    <footer class="footer bg-dark text-light border-top border-secondary py-4 px-md-5 mt-auto">
+        <div class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div class="opening-hours text-center text-md-start">
+                <p class="mb-0"><strong class="text-uppercase tracking-wider text-primary">Hours:</strong> Mon-Sat 9am-5pm <span class="d-block d-md-inline ms-md-3 text-muted">| Sun Closed</span></p>
+            </div>
+            
+            <div class="footer-links text-center small">
+                <a href="privacy.html" class="text-white-50 text-decoration-none mx-2 hover-white">Privacy Policy</a>
+                <span class="text-secondary">|</span>
+                <!-- Staff portal nav for marker to easily access this would normally be password protected -->
+                <a href="roster.html" class="text-white-50 text-decoration-none mx-2 hover-white">Staff Portal 🔒</a>
+            </div>
+
+            <div class="copy-text text-center text-md-end text-muted">
+                <p class="mb-0">&copy; 2026 Snazzy Paws Grooming</p>
+            </div>
+        </div>
+    </footer>
+    <!-- END: FOOTER COMPONENT -->
+
+    <!-- Framework JavaScript Bundle for responsive elements like Mobile Hamburger Toggle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

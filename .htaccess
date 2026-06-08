@@ -1,0 +1,6 @@
+# START: PASSWORD PROTECTION CONFIGURATION
+AuthType Basic
+AuthName "Snazzy Paws Private Staff Portal"
+AuthUserFile /absolute/path/to/your/folder/.htpasswd
+Require valid-user
+# END: PASSWORD PROTECTION CONFIGURATION
